@@ -1,0 +1,2 @@
+# Klipper TMC2209 Sensorless Homing Issue on Z-Axis
+ his repository is focused on troubleshooting and optimizing the sensorless homing configuration for the Z-axis on a 3D printer using Klipper firmware with TMC2209 stepper drivers. Despite extensive adjustments to driver_SGTHRS and other parameters, the Z-axis continues to trigger the endstop prematurely during the retract phase after homing.  The goal is to gather community input and solutions for resolving this issue while ensuring smooth and accurate sensorless homing for the Z-axis.
