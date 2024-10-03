@@ -14,9 +14,28 @@ This repository serves as a central point for troubleshooting sensorless homing 
 ```ini
 [tmc2209 stepper_z]
 uart_pin: PC5
-run_current: 0.8 # I've set this down not to abuse the motor, there are 0.8a version on some of these machines.
+run_current: 0.8  # Set down to prevent motor stress (some motors have 0.8A versions)
 hold_current: 0.5
 interpolate: True
 stealthchop_threshold: 1
 driver_SGTHRS: 80  # Adjust sensitivity if needed
 diag_pin: ^PC3
+
+[tmc2209 stepper_x]
+uart_pin: PB9
+run_current: 0.9
+hold_current: 0.8
+interpolate: True
+stealthchop_threshold: 1
+driver_SGTHRS: 100
+diag_pin: ^PC0
+
+[tmc2209 stepper_y]
+uart_pin: PD2
+run_current: 1.4
+hold_current: 0.8
+interpolate: True
+stealthchop_threshold: 1
+driver_SGTHRS: 115
+diag_pin: ^PB8
+
